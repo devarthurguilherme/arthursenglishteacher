@@ -1,0 +1,16 @@
+# Env Files
+env/
+**/env/
+
+.env
+
+# Test Python Files
+chatbot.py
+backupapp.py
+backup2app.py
+backupSeveralModels.py
+backuputils.py
+testSttARStreamlit.py
+STT.py
+TTS.py
+TTS_WAV.py
