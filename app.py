@@ -12,7 +12,7 @@ import io
 load_dotenv(override=True)
 
 # Config Client
-client = Groq(api_key=os.environ.get("GROQ_API_KEY3"))
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 
 def readContextFromFile(filePath):
@@ -90,6 +90,7 @@ def main():
     # Sidebar
     with st.sidebar:
         st.title("English Teacher Chatbot")
+        st.write(f"API Key: {os.environ.get('GROQ_API_KEY3')}")
 
         # Button to start recording
         audioBytes = audio_recorder()
