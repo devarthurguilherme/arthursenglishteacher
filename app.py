@@ -3,7 +3,7 @@ from groq import Groq
 
 # Inicializar o cliente Groq com a chave da API
 client = Groq(
-    api_key="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")
+    api_key="GROQ_API_KEY3")
 
 
 def get_response_from_model(message):
@@ -33,7 +33,7 @@ def get_response_from_model(message):
 def main():
     st.set_page_config(layout='wide')
 
-    st.title("Chatbot")
+    st.title("Chatbot Test")
 
     # Histórico de mensagens
     if "messages" not in st.session_state:
