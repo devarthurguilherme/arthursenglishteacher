@@ -4,15 +4,9 @@ from dotenv import load_dotenv
 import os
 
 
-# Load Env Variables
-load_dotenv(override=True)
-
-# Config Client
-client = Groq(api_key=os.environ.get("GROQ_API_KEY3"))
-
-# # Inicializar o cliente Groq com a chave da API
-# client = Groq(
-#     api_key="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")
+# Inicializar o cliente Groq com a chave da API
+client = Groq(
+    api_key="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")
 
 
 def get_response_from_model(message):
